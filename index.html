@@ -248,7 +248,7 @@
             width: 100%;
             max-width: 1000px;
             margin-top: 24px;
-            background-color: #d4c4b57b;
+            background-color: #0B0C1044;
             justify-content:center;
             align-items: end;
         }
@@ -384,9 +384,12 @@ color: white;
       } */
 
         @media (max-width: 728px) {
-            /* .gallery_A {
-                grid-template-columns: auto auto;
-            } */
+            #VCP, #LOGOS, .gallery_A, #gallery_A, .gallery_A__links, .gallery_B, #gallery_B {
+                /* width: 100%; */
+                max-width: 700px;
+                align-items: center;justify-content: center;
+                margin: 0;
+            }
 
             .header__content {
                 display: flex;
@@ -408,7 +411,34 @@ color: white;
                 justify-content: center;
                 padding: 0;
             }
+            .gallery_A__LOGO{
+                font-size: small;
+            }
         }
+
+        @media (max-width: 600px){
+                        #VCP, #LOGOS, .gallery_A, #gallery_A, .gallery_A__links, .gallery_B, #gallery_B {
+                max-width: 590px;
+                align-items: center;justify-content: center;
+                margin: 0;
+            }
+            .gallery_B, .gallery_A__KFP, .gallery_A__CAT, .gallery_A__LOGO{
+                grid-template-columns: auto;
+                row-gap: 10px;
+            }
+
+        }
+
+        @media (max-width: 468px){
+            a .contact{
+                font-size: x-small;
+            }
+            .gallery_A__LOGO
+            {
+                font-size: small;
+            }
+        }
+
 
         .hide {
             opacity:0 !important;
@@ -530,7 +560,7 @@ color: white;
                         visual identity. </p>
                     
                     <div id="KFP" class="gd">
-                        <img style="max-width: 900px;" src="assets/KFP/title.png" alt="">
+                        <img style="max-width: 100%;" src="assets/KFP/title.png" alt="">
                         <button style="display: flex; flex-direction: column;" onclick="viewKFP()"> View Campaign
                             Package </button>
                         <div id="kfp_pack" class="hide">
@@ -549,7 +579,7 @@ color: white;
                         </div>
                     </div>
                     <div id="CAT" class="gd">
-                        <img style="min-width: 90%; max-width: 900px; max-height: 400px; align-self: center;"
+                        <img style="width: 100%; max-width: 900px; max-height: 400px; align-self: center;"
                             src="assets/Catalyst/tiltleAsset 8.png" alt="">
                           
 
@@ -587,6 +617,8 @@ color: white;
                                     &copy 2026
                                 </p>
                             </div>
+                            <img class="gallery_A__LOGO--asset" src="assets/Logos/ZAA-logo.png" alt=""
+                                style="background-color: #4c4c4c;">
                             <div class="mm-desc" style="padding: 12px">
                                 <h3 style="text-shadow: 0 1px 1px #0B0C10;">Merry Minds Logo</h3>
                                 <p>This logo was created as a mock up for an all ages creative wellness brand. It was
@@ -594,9 +626,9 @@ color: white;
                                     symbolize their three pillars - mind, body, and mood. Created with ProCreate. <br>
                                     &copy 2026</p>
                             </div>
-                            <img class="gallery_A__LOGO--asset" src="assets/Logos/ZAA-logo.png" alt=""
-                                style="background-color: #4c4c4c;">
                             <img class="gallery_A__LOGO--asset" src="assets/Logos/merry-logo.PNG" alt="">
+                            
+                            
 
                         </div>
                     </div>
