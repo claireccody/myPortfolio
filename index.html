@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Claire Cody - Designer</title>
+    <meta name="description" content="Clean, intentional websites for creatives, artists, and practitioners." />
+    <style>
+        /* @font-face {
+        font-family: "MyScript";
+        src: url(./MyScript_num-Regular.ttf) format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      } */
+
+        @import url("https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: "Rubik", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+
+        hr{
+            margin: 10vh 0;
+            color: #1a6e0b93;
+        }
+
+        body {
+            margin: 0;
+            line-height: 1.6;
+            color: #0B0C10;
+            background: #fafafa;
+        }
+
+        main {
+            max-width: 1100px;
+            min-width: 97vw;
+            margin: auto;
+            padding: 8px 32px;
+        }
+
+        h1,
+        h2, .gallery_A__links a, button, footer a, footer p{
+            line-height: 1.2;
+            font-family:'Times New Roman', Times, serif !important;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        button {
+            color: white;
+            text-align: right;
+            background-color: #0B0C1044;
+            box-shadow: 0 0 2px 1px #1a6e0b78;
+            padding: 4px;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px #0B0C10;
+        }
+
+        button:hover {
+            box-shadow: none;
+            color: #D4C4B5;
+            box-shadow: inset 0 0 2px 1px #1a6e0b78;
+        }
+
+        h2 {
+            text-align: center;
+
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        section {
+            margin-top: 3rem;
+
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+.gallery_A__links{
+            text-shadow: 1px 1px 2px #0B0C10;
+            font-size: larger;
+        }
+
+        .cta {
+            margin-top: 2rem;
+            font-weight: 600;
+            font-size: x-large;
+        }
+
+        .contact:hover {
+            text-decoration: none;
+        }
+
+        header {
+            text-align: center;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            /* background-color: #0B0C10; */
+            box-shadow: 0px 4px 12px #0b0c10cc;
+            color: #D4C4B5;
+            text-shadow: 0 0 4px #cccccc;
+            min-height: fit-content;
+            height: fit-content;
+
+            /* padding: 12px; */
+        }
+
+        .header__content {
+            width: 100%;
+            max-width: 900px;
+            padding: 12px 12px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        select {
+            background-color: #0B0C1044;
+            box-shadow: none;
+            color: #D4C4B5;
+            border-radius: 4px;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: row;
+            text-decoration: none !important;
+            list-style-type: none;
+            margin: 32px 16px;
+        }
+
+        .link {
+            margin: 4px;
+            background-color: #D4C4B599;
+            padding: 4px;
+            border-radius: 4px;
+            color: #0B0C10;
+            text-shadow: 0 0 4px #ffffff;
+            font-weight: bold;
+            border: .1px solid #1a6e0b78;
+            box-shadow: 0 0 2px 2px #D4C4B599;
+        }
+
+        .link:hover {
+            box-shadow: none;
+            color: #0B0C10;
+            text-shadow: 0 0 4px white;
+            text-decoration: none !important;
+            background-color: #1a6e0b78;
+        }
+
+        .logo__img {
+            display: flex;
+            width: 80px;
+            box-shadow: 0 0 4px 1px #1a6e0b78;
+        }
+
+        .logo__img--wrapper {
+            background-color: #D4C4B5;
+            max-height: 80px;
+            /* box-shadow: 0 2px 4px #0B0C10; */
+        }
+
+        footer {
+            font-size: larger;
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            margin: 48px 0 0 0;
+            /* background-color: #D4C4B599; */
+            background-image: linear-gradient(to right,#D4C4B5ef,#ffffff, #D4C4B5ef), url('./assets/personal-logo.png');
+            padding: 48px 0;
+            box-shadow: 0 0 8px 4px #0B0C1044;
+        }
+
+        body {
+            background-image: linear-gradient(#1a6e0b78, #0b0c1097,#D4C4B5);
+        }
+
+        section {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #hero {
+            /* background-color: #D4C4B544; */
+            
+            background-image:
+                linear-gradient(to right, #d4c4b5ed, #fffffffd, #d4c4b5ed),
+                url("./assets/personal-logo.png");
+            background-position: center;
+            margin-top: 0;
+            margin-bottom: 64px;
+            height: 100vh;
+            padding: 10px;
+            min-height: fit-content !important;
+            box-shadow: 0 0 8px 4px #0B0C1044;
+        }
+
+        #booking{
+            margin-bottom:80px;
+        }
+
+        #hero,
+        #gallery {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #KFP, #CAT{
+            border: .1px solid white;
+            box-shadow: 0 0 8px 2px #0B0C107e;
+        }
+
+
+        #KFP,
+        #CAT,
+        #LOGOS, #VCP {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 20px;
+            /* background-color: #0b0c10a2; */
+            /* border: 0.1px solid #D4C4B5cc; */
+            border-radius: 0px;
+            width: 100%;
+            max-width: 1000px;
+            margin-top: 24px;
+            background-color: #d4c4b57b;
+            justify-content:center;
+            align-items: end;
+        }
+
+        #LOGOS{
+                        box-shadow: inset 0 0 16px 4px #0b0c107e;
+color: white;
+            background-color: #1a6e0b64;
+                        border: .1px solid #D4C4B5;
+
+        }
+
+        #VCP{
+            background-color: #d4c4b5ac;
+            border: .1px solid #1a6e0bb9;
+            box-shadow: inset 0 0 8px 2px #0B0C1044;
+        }
+
+        #gallery_B {
+            padding: 20px 20px;
+            background-color: #0B0C107e;
+            /* border: 0.1px solid #0B0C10; */
+            /* box-shadow: 0 0 2px 4px #D4C4B544; */
+            width: 100%;
+            max-width: 1000px;
+ border: .1px solid #D4C4B5;
+                         box-shadow: 0 0 16px 4px #0b0c107e;
+
+
+        }
+
+        .gallery_B,
+        .gallery_A {
+            display: grid;
+            column-gap: 20px;
+            row-gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gallery_A__KFP,
+        .gallery_A__CAT,
+        .gallery_A__LOGO {
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+
+        }
+
+        .gallery_A__LOGO{
+            border: .1px solid white;
+            padding: 16px;
+             box-shadow: 0 0 16px 4px #0B0C1044;
+             background-color: #D4C4B54c;
+
+
+        }
+
+        .gallery_A__KFP--asset,
+        .gallery_A__CAT--asset,
+        .gallery_A__LOGO--asset {
+            max-width: 97%;
+            /* border:2px solid #D4C4B5; */
+            box-shadow: 0px 0px 8px 2px #D4C4B5;
+            border: .1px solid #0B0C10;
+
+
+        }
+
+        .gallery_A__KFP {
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .gallery_B {
+            grid-template-columns: auto auto auto;
+        }
+
+        .gallery_A__sample {
+            background-color: white;
+        }
+
+        .gallery_B__sample {
+            box-shadow: 0PX 0px 8px 2px #0B0C10;
+            background-color:#D4C4B544 ;
+            border: .1px solid #1a6e0b78;
+
+        }
+        .gallery_B__sample:hover{
+            box-shadow: inset 0PX 0px 8px 2px #0B0C10;
+        }
+
+        .gallery_A__sample,
+        .gallery_B__sample {
+            display: flex;
+            padding: 8px 8px;
+            width: 100%;
+        }
+
+        #GalleryB {
+            margin-left: 0;
+        }
+
+        .purple {
+            /* color: #D4C4B5; */
+            text-shadow: #0B0C10 0 0 4px;
+            font-family: "Charm", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .myScript {
+            font-size: larger;
+        }
+
+        /* @media (max-width: 600px) {
+        #contact-link {
+          display: contents !important;
+        }
+
+        .link {
+          display: none;
+        }
+
+      } */
+
+        @media (max-width: 728px) {
+            .gallery_A {
+                grid-template-columns: auto auto;
+            }
+
+            .header__content {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .header__content--sections {
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                padding: 0 auto;
+            }
+
+            .links {
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+            }
+        }
+
+        .hide {
+            opacity:0 !important;
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <header>
+            <div class="header__content--name">
+                <h1 style="color: white; text-shadow: 0 0 2px #D4C4B5">Claire Cody</h1>
+            </div>
+            <div class="header__content--sections">
+                <ul class="links">
+                    <li id="contact-link" class="link">
+                        <a class="contact" href="#gallery_A">Graphic Designs</a>
+                    </li>
+                    <li id="contact-link" class="link">
+                        <a class="contact" href="#gallery_B">Web Samples</a>
+                    </li>
+                    <li id="contact-link" class="link">
+                        <a class="contact" href="#booking">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header> -->
+    <section id="hero" style="width: 100vw; padding: 0 15vw">
+        <div class="header__content">
+
+            <div class="header__content--name">
+                <h1 style="color: #0B0C10; text-shadow: 0 0 4px #ffffff">Claire Cody</h1>
+            </div>
+            <div class="header__content--sections">
+                <ul class="links">
+                    <li id="contact-link" class="link">
+                        <a class="contact" href="#VCP">Graphic Designs</a>
+                    </li>
+                    <li id="contact-link" class="link">
+                        <a class="contact" href="#gallery_B">Web Samples</a>
+                    </li>
+                    <li id="contact-link" class="link">
+                        <a class="contact" href="#booking">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <figure class="logo__wrapper">
+            <img src="./assets/personal-logo.png" alt="" class="" style="
+            width: 30%;
+            background-color: white;
+            box-shadow: 0 0 8px 1px #1a6e0b78;
+          " />
+            <!-- <h1>Claire Cody</h1> -->
+            <h2>Graphic Design | Web Development</h2>
+        </figure>
+        <p class="bio">
+            Hi, I'm Claire! I'm a <strong> digital designer</strong> with a background in front-end development,
+            graphic design, digital interactivity, and analog art. I focus on <strong>visual clarity, structure, and
+            stable systems</strong> that ensure projects are developed in a way that is <strong>professional, accessible, and
+            stylistically appropriate.</strong> I have a strong passion for learning and applying new tools through the exploration
+            of a diverse set of frameworks.
+        </p>
+        <!-- <p class="cta">
+            <a class=" contact" href="#booking"><strong>Book now!</strong></a>
+        </p> -->
+    </section>
+    <main>
+                <section id="booking">
+            <script async src="https://tally.so/widgets/embed.js"></script>
+            <iframe style="
+            min-height: 500px;
+            border: 1px solid #1a6e0b93;
+            box-shadow: 0 0 8px 2px #0B0C10;
+          " data-tally-src="https://tally.so/r/b57jl6" width="100%" height="100%" frameborder="0" marginheight="0"
+                marginwidth="0" title="Digital Studio Intake Questionnaire"></iframe>
+        </section>
+        <section id="gallery">
+            <!-- <select class="link" name="Gallery" id="GalleryB" onchange="galleryScrollB()" style="
+            font-size: xx-large;
+            text-align: center;
+            align-self: center;
+          ">
+                <option value="" selected>Portfolio</option>
+                <option value="gallery_A">Graphic Design</option>
+                <option value="gallery_B">Web Development</option>
+            </select> -->
+            <div id="gallery_A" class="gallery-opt">
+                <!-- <h1 style="color: white">Graphic Design</h1> -->
+                <div class="gallery_A">
+                    <div class="gallery_A__links"
+                        style="color: white; display: flex; flex-direction: row; width: 100%; justify-content: space-around;">
+                        <a href="#VCP">Visual Campaign Packages</a>
+                        <!-- <a href="#CAT">Catalyst Visual Campaign Package</a> -->
+                        <a href="#LOGOS">Logo Designs</a>
+                        <a href="#gallery_B">Web Samples</a>
+                    </div>
+                
+                                <div id="gallery_B" class="gallery-opt">
+                <h3 style="color: #ffffff;" style="text-shadow: 0 1px 1px #0B0C10;">WEBSITE SAMPLES</h3>
+                <div class="gallery_B">
+                    <a href="https://www.captdaveandhightide.com" target="_about"><img class="gallery_B__sample"
+                            src="./assets/highTideLogo.JPG" alt="tattoo" />
+                        <a href="https://library-w-react-nine.vercel.app/" target="_about">
+                            <img class="gallery_B__sample" src="./assets/LibraryCover.png" alt="tattoo" />
+                        </a>
+                        <a href="https://www.inkfolio.studio/" target="_about">
+                            <img class="gallery_B__sample" src="./assets/demoLogo.png" alt="tattoo" />
+                        </a>
+                </div>
+            </div>
+            <hr>
+            <h2 style="font-size: xx-large;color: #ffffff; text-shadow: 1px 1px 2px #0B0C10;">Graphic Designs</h2>
+                                                    <div id="VCP">
+                       <p>A <strong style="color: white; text-shadow: 1px 1px 2px #0B0C10;">Visual Campaign Package</strong> translates a unified design system across multiple formats. Each
+                        set includes core promotional assets—poster, marquee display, social square, ticketing image,
+                        and web banner—each adapted to its platform while maintaining consistent typography, color, and
+                        visual identity. </p>
+                    
+                    <div id="KFP" class="gd">
+                        <img style="max-width: 900px;" src="assets/KFP/title.png" alt="">
+                        <button style="display: flex; flex-direction: column;" onclick="viewKFP()"> View Campaign
+                            Package </button>
+                        <div id="kfp_pack" class="hide">
+                            <div class="gallery_A__KFP">
+                                <img class="gallery_A__KFP--asset" src="assets/KFP/KFP Poster 2026.png" alt="">
+                                <img class="gallery_A__KFP--asset" src="assets/KFP/Social Square.png" alt="">
+                                <img class="gallery_A__KFP--asset" src="assets/KFP/Marquee.png" alt="">
+                                <img class="gallery_A__KFP--asset" src="assets/KFP/Ticketing Image.png" alt="">
+
+                            </div>
+                            <img class="gallery_A__KFP--asset" src="assets/KFP/Web Banner KFP 26.png" alt=""
+                                style="margin: 0 auto;">
+                                <hr>
+                            <button style="display: flex; flex-direction: column;" onclick="viewKFP()"> Hide Package
+                            </button>
+                        </div>
+                    </div>
+                    <div id="CAT" class="gd">
+                        <img style="min-width: 90%; max-width: 900px; max-height: 400px; align-self: center;"
+                            src="assets/Catalyst/tiltleAsset 8.png" alt="">
+                          
+
+                        <button style="display: flex; flex-direction: column;" onclick="viewCAT()">
+                            View Campaign Package</button>
+                        <div id="cat_pack" class="hide">
+                            <div class="gallery_A__CAT">
+                                <img class="gallery_A__CAT--asset"
+                                    src="assets/Catalyst/ZAA Poster 2026 - Catalyst F.png" alt="">
+                                <img class="gallery_A__CAT--asset" src="assets/Catalyst/Social Square F.png" alt="">
+
+                                <img class="gallery_A__CAT--asset" src="assets/Catalyst/Marquee F.png" alt="">
+
+                                <img class="gallery_A__CAT--asset" src="assets/Catalyst/Ticketing Image F0.png" alt="">
+
+                            </div>
+                            <img class="gallery_A__CAT--asset" src="assets/Catalyst/Web Banner F.png" alt=""
+                                style="margin: 0 auto;">
+<hr>
+                            <button style="display: flex; flex-direction: column;" onclick="viewCAT()">
+                                Hide Package</button>
+
+                        </div>
+                    </div>
+</div>
+                    <div id="LOGOS" class="gd">
+                        <h3 style="text-shadow: 0 1px 1px #0B0C10;"> LOGO DESIGNS </h3>
+                        <div class="gallery_A__LOGO">
+                            <div class="zaa-desc" style="padding: 12px">
+                                <h3 style="text-shadow: 0 1px 1px #0B0C10;">Zenith Aerial Arts Logo</h3>
+                                <p>Zenith Aerial Arts (ZAA) is Eugene, Oregon's professional youth aerial circus
+                                    ensemble. This logo was made to represent the performance troupe. It has been used
+                                    on team merchandize and promotion material. Created with Adobe Illustrator.
+                                    <br>
+                                    &copy 2026
+                                </p>
+                            </div>
+                            <div class="mm-desc" style="padding: 12px">
+                                <h3 style="text-shadow: 0 1px 1px #0B0C10;">Merry Minds Logo</h3>
+                                <p>This logo was created as a mock up for an all ages creative wellness brand. It was
+                                    developed to
+                                    symbolize their three pillars - mind, body, and mood. Created with ProCreate. <br>
+                                    &copy 2026</p>
+                            </div>
+                            <img class="gallery_A__LOGO--asset" src="assets/Logos/ZAA-logo.png" alt=""
+                                style="background-color: #4c4c4c;">
+                            <img class="gallery_A__LOGO--asset" src="assets/Logos/merry-logo.PNG" alt="">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br />
+
+        </section>
+        <br />
+        <br />
+        <!-- 
+    <section id="booking">
+      <h2>About <span style="color:#0c355d; text-decoration: underline;">Claire Cody</span></h2>
+      <p style="text-align: center;">
+        I’m a <span class="purple">creative technologist & digital designer</span> with a background in <span class="purple">front-end development, 
+        graphic design, creative digital interactivity, and analog art</span>. I focus on visual clarity, structure, and stable systems that ensure
+        your work is presented in a way that feels professional, accessible, and <span class="purple">true to your style</span>. 
+      <br>
+      <br>
+        I work under <span class="purple myScript">StudioCeiz</span>, my creative studio, but at this stage it’s just me — personally handling every project to make sure your website reflects the care and thought you put into your work.
+      </p>
+    </section> -->
+
+
+    </main>
+    <footer>
+        <div class="footer-links" style="display: flex; margin: 0 auto; justify-content: space-evenly; max-width: 80%; align-self: center; align-items: center;justify-self: center;">
+        <a href="">Resume</a>
+        <a href="#gallery_A">Portfolio</a>
+        <a  href="#booking">CONTACT</a>
+        <!-- <a href="#gallery_B">Website Samples</a> -->
+        </div>
+        <br>
+        <br>
+        
+
+
+        <br>
+                <figure>
+            <img src="./assets/personal-logo.png" alt="" class="logo__img" style="margin: 0 auto;background-color: white; width:100px; "></a>
+        </figure>
+        <br>
+        <p style="font-size: x-small;">Claire Cody &copy 2026 all rights reserved.</p>
+
+    </footer>
+</body>
+<script src="./dynamics.js"></script>
+
+</html>
