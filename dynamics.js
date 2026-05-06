@@ -59,3 +59,12 @@ function viewKFP() {
   document.getElementById("kfp_pack").classList.toggle("hide");
 
 }
+
+function checkSize() {
+  if (window.innerWidth < 600) {
+    alert("Mobile Site is currently under construction, please use desktop or laptop for best experience. I apologize for the inconvenience.");
+  }
+}
+
+window.addEventListener("load", checkSize);
+window.addEventListener("resize", checkSize);
